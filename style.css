@@ -1,0 +1,271 @@
+/*Estilos del portafolio WEB*/
+
+/*Pagina WEB*/
+html {
+    font-family: 'Inconsolata', monospace;
+    background-color: white;
+}
+
+h1{
+    text-decoration: overline blue;
+    color: black;
+    font-size: 3.5rem;
+    margin: 40px;
+}
+
+/*Cuerpo*/
+body {
+    margin: 0;
+}
+
+/*Encabezado*/
+header {
+    height: 40px;
+    padding: 1%;
+    background-color: blue;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.menu {
+    margin: 2.5px;
+}
+.menu a{
+    margin: auto 5px;
+    font-size: 32px;
+    color: black;
+}
+.menu a:link {
+    transition: color 0.3s ease;
+    text-decoration:none;
+}
+.menu a:hover {
+    cursor: pointer;
+    color: wheat;
+    text-decoration:none
+}
+.menu a:active {
+    color: white;
+    text-decoration:none
+}
+
+/*Profesión*/
+#profesion {
+    margin: 1% auto;
+    padding: 1%;
+}
+
+/*Imagen personal*/
+#profesion img{
+    width: 400px;
+    margin: 20px;
+    border-radius: 50%;
+    float: left;
+}
+
+/*Nombre y carrera*/
+#profesion h1, h3 {
+    color: blue;
+}
+#profesion h1 {
+    text-decoration: underline black;
+    font-size: 3.5rem;  
+}
+#profesion h3 {
+    font-size: 3rem;
+    vertical-align: middle;
+}
+
+/*Presentación*/
+#presentacion {
+    margin: 5% auto;
+    padding: 20px;
+    height: 340px;
+    border-style: solid;
+}
+
+/*Lenguajes de programacion*/
+#lenguajes {
+    background-color: white;
+    margin: 5% auto;
+    padding: 20px;
+}
+
+#lenguajes img{
+    margin: auto 80px;
+}
+
+/*Proyectos*/
+.proyectos {
+    margin: 5% auto;
+    padding: 20px;
+    height: 850px;
+    border-style: solid;
+}
+
+#auto-arduino, #bot-discord, #compañias-scout, #contraseñas, #calculadora, #calculadora-RGB{
+    float: left;
+    width: 250px;
+    height: 300px;
+    border-style: solid;
+    margin: 20px 80px;
+    position: relative;
+    background-color: #f0f0f0;
+}
+
+.titulo{
+    position: absolute;
+    display: block;
+    text-align: center;
+    color: blue;
+    margin-top: -20px;
+    text-decoration: underline black;
+    font-size: 25px;
+    transition: opacity 0.3s;
+}
+
+.texto{
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 60px;
+    text-align: left;
+    display: block;
+    line-height: 25px;
+    font-size: 11px;
+    transition: opacity 0.3s;
+}
+
+.image{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: none;
+    transition: opacity 0.3s;
+}
+
+
+#auto-arduino:hover .texto, #auto-arduino:hover .titulo{
+    opacity: 0;
+}
+#bot-discord:hover .texto, #bot-discord:hover .titulo{
+    opacity: 0;
+}
+#compañias-scout:hover .texto, #compañias-scout:hover .titulo{
+    opacity: 0;
+}
+#contraseñas:hover .texto, #contraseñas:hover .titulo{
+    opacity: 0;
+}
+#calculadora:hover .texto, #calculadora:hover .titulo{
+    opacity: 0;
+}
+#calculadora-RGB:hover .texto, #calculadora-RGB:hover .titulo{
+    opacity: 0;
+}
+
+#auto-arduino:hover .image, #bot-discord:hover .image, #compañias-scout:hover .image{
+    display: block;
+    opacity: 1;
+}
+#contraseñas:hover .image, #calculadora:hover .image, #calculadora-RGB:hover .image{
+    display: block;
+    opacity: 1;
+}
+
+#bot-discord .titulo, #compañias-scout .titulo, #contraseñas .titulo, #calculadora-RGB .titulo{
+    margin-top: 5px;
+}
+#calculadora .titulo{
+    margin-top: 20px;
+}
+
+.texto.show {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.proyectos a{
+    color: black;
+}
+
+/*Pie de página - Contacto*/
+footer{
+    height: 65px;
+    margin: 20px auto auto;
+    background-color: blue;
+    align-items: center;
+    padding: 1%;
+}
+
+footer img{
+    color: black;
+    margin: auto 50px;
+}
+
+/*Texto de presentacion - de About-Sobre mi y donación*/
+h3{
+    color: black;
+    font-size: 1.5rem;
+    margin: 40px; 
+}
+
+.about a{
+    font-size: 1.5rem;
+    margin: 40px; 
+}
+
+.donacion img{
+    margin: 40px;
+}
+
+/* Estilos para la página de contacto */
+#contactame{
+    margin: 5% auto;
+    padding: 20px;
+    border-style: solid;
+    background-color: #f0f0f0;
+}
+
+#contactame h1{
+    color: blue;
+    text-decoration: underline black;
+    font-size: 3.5rem;
+    margin-bottom: 20px;
+}
+
+#contactame-form{
+    display: grid;
+    gap: 10px;
+    font-size: 16px;
+}
+
+#contactame-form label{
+    color: blue;
+    font-weight: bold;
+}
+
+#contactame-form input[type="email"],
+#contactame-form textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+#contactame-form button[type="submit"]{
+    background-color: blue;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+#contactame-form button[type="submit"]:hover{
+    background-color: darkblue;
+}
