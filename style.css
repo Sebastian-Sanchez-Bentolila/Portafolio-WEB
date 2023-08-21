@@ -269,3 +269,65 @@ h3{
 #contactame-form button[type="submit"]:hover{
     background-color: darkblue;
 }
+
+/* Media query para dispositivos móviles */
+@media screen and (max-width: 768px) {
+  
+  /* Cambia el ancho del contenedor principal para que ocupe el 100% de la pantalla */
+  .container{
+    width: 100%;
+  }
+  
+  /* Centra el contenido del contenedor principal */
+  .container > *{
+    margin: 0 auto;
+  }
+  
+  /* Cambia el tamaño de la fuente para que sea más fácil de leer en dispositivos móviles */
+  body{
+    font-size: 12px;
+  }
+  
+  /* Cambia el tamaño de las imágenes para que no ocupen demasiado espacio */
+  img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Oculta el menú de navegación en dispositivos móviles */
+  .navbar{
+    display: none;
+  }
+  
+  /* Muestra un menú de hamburguesa en su lugar */
+  .navbar-toggler{
+    display: block;
+  }
+  
+  /* Cambia el tamaño del botón de la hamburguesa para que sea más fácil de tocar */
+  .navbar-toggler-icon{
+    font-size: 20px;
+  }
+  
+  /* Oculta el carrusel de portafolio en dispositivos móviles */
+  .carousel{
+    display: none;
+  }
+  
+  /* Muestra una lista de imágenes del portafolio en su lugar */
+  .carousel-inner{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  /* Cambia el tamaño de las imágenes del portafolio para que se ajusten al ancho de la pantalla */
+  .carousel-item img{
+    max-width: 100%;
+    height: auto;
+  }
+  
+  /* Oculta el pie de página en dispositivos móviles */
+  .footer{
+    display: none;
+  }
+}
