@@ -270,64 +270,74 @@ h3{
     background-color: darkblue;
 }
 
-/* Media query para dispositivos móviles */
-@media screen and (max-width: 768px) {
-  
-  /* Cambia el ancho del contenedor principal para que ocupe el 100% de la pantalla */
-  .container{
-    width: 100%;
-  }
-  
-  /* Centra el contenido del contenedor principal */
-  .container > *{
-    margin: 0 auto;
-  }
-  
-  /* Cambia el tamaño de la fuente para que sea más fácil de leer en dispositivos móviles */
-  body{
-    font-size: 12px;
-  }
-  
-  /* Cambia el tamaño de las imágenes para que no ocupen demasiado espacio */
-  img{
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Oculta el menú de navegación en dispositivos móviles */
-  .navbar{
-    display: none;
-  }
-  
-  /* Muestra un menú de hamburguesa en su lugar */
-  .navbar-toggler{
-    display: block;
-  }
-  
-  /* Cambia el tamaño del botón de la hamburguesa para que sea más fácil de tocar */
-  .navbar-toggler-icon{
-    font-size: 20px;
-  }
-  
-  /* Oculta el carrusel de portafolio en dispositivos móviles */
-  .carousel{
-    display: none;
-  }
-  
-  /* Muestra una lista de imágenes del portafolio en su lugar */
-  .carousel-inner{
-    display: flex;
-    flex-direction: column;
-  }
-  
-  /* Cambia el tamaño de las imágenes del portafolio para que se ajusten al ancho de la pantalla */
-  .carousel-item img{
-    max-width: 100%;
-    height: auto;
-  }
-  
-  /* Oculta el pie de página en dispositivos móviles */
-  .footer{
-    display: none;
-  }
+/* Media query para dispositivos moviles */
+@media only screen and (max-width: 600px){
+    
+    /* Encabezado */
+    header{
+        height: auto;
+        padding: 2%;
+        text-align: center;
+    }
+    
+    .menu a{
+        font-size: 24px;
+    }
+    
+    /* profesión */
+    #profesion img{
+        width: 100%;
+        float: none;
+        margin: 0;
+    }
+    
+    #profesion h1, #profesion h3{
+        font-size: 2rem;
+    }
+    
+    /* Presentación */
+    #presentacion{
+        height: auto;
+    }
+    
+    /* Lenguajes */
+    #lenguajes img{
+        margin: auto;
+        width: 30%;
+    }
+    
+    /* Proyectos */
+    .proyectos{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        height: auto;
+    }
+    
+    .titulo{
+        font-size: 1rem;
+    }
+
+    .texto{
+        font-size: 0.7;
+    }
+    
+    /* Pie de página - Contacto */
+    footer{
+        height: 40px;
+    }
+
+    footer img{
+        margin: auto 20px;
+        width: 30px;
+    }
+    
+    /* Contact.html styles */
+    #contactame-form input[type="email"], #contactame-form textarea{
+        width: 100%;
+    }
+    
+    #contactame-form button[type="submit"]{
+        font-size: 16px;
+    }
 }
