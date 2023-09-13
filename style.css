@@ -1,9 +1,9 @@
 /*Estilos del portafolio WEB*/
 
 /*Pagina WEB*/
-html {
+html{
     font-family: 'Inconsolata', monospace;
-    background-color: white;
+    background-color: powderblue;
 }
 
 h1{
@@ -14,78 +14,77 @@ h1{
 }
 
 /*Cuerpo*/
-body {
+body{
     margin: 0;
 }
 
 /*Encabezado*/
-header {
+header{
     height: 40px;
     padding: 1%;
     background-color: blue;
     align-items: center;
     justify-content: space-evenly;
+    border-bottom: solid;
 }
-.menu {
+.menu{
     margin: 2.5px;
 }
 .menu a{
     margin: auto 5px;
     font-size: 32px;
-    color: black;
+    color: white;
 }
-.menu a:link {
+.menu a:link{
     transition: color 0.3s ease;
     text-decoration:none;
 }
-.menu a:hover {
+.menu a:hover{
     cursor: pointer;
-    color: wheat;
+    color: black;
     text-decoration:none
 }
-.menu a:active {
-    color: white;
+.menu a:active{
+    color: gray;
     text-decoration:none
 }
 
 /*Profesión*/
-#profesion {
+#profesion{
     margin: 1% auto;
     padding: 1%;
 }
 
 /*Imagen personal*/
 #profesion img{
-    width: 400px;
+    width: 500px;
     margin: 20px;
     border-radius: 50%;
     float: left;
 }
 
 /*Nombre y carrera*/
-#profesion h1, h3 {
+#profesion h1, h3{
     color: blue;
 }
-#profesion h1 {
-    text-decoration: underline black;
+#profesion h1{
+    text-decoration: underline dotted black;
     font-size: 3.5rem;  
 }
-#profesion h3 {
+#profesion h3{
     font-size: 3rem;
     vertical-align: middle;
 }
 
 /*Presentación*/
-#presentacion {
+#presentacion{
     margin: 5% auto;
     padding: 20px;
     height: 340px;
-    border-style: solid;
 }
 
 /*Lenguajes de programacion*/
-#lenguajes {
-    background-color: white;
+#lenguajes{
     margin: 5% auto;
     padding: 20px;
 }
@@ -95,11 +94,12 @@ header {
 }
 
 /*Proyectos*/
-.proyectos {
+.proyectos{
     margin: 5% auto;
     padding: 20px;
     height: 850px;
-    border-style: solid;
+    padding-bottom: 0%;
+    margin-bottom: 0%;
 }
 
 #auto-arduino, #bot-discord, #compañias-scout, #contraseñas, #calculadora, #calculadora-RGB{
@@ -181,7 +181,7 @@ header {
     margin-top: 20px;
 }
 
-.texto.show {
+.texto.show{
     opacity: 1;
     transform: translateY(0);
 }
@@ -197,11 +197,15 @@ footer{
     background-color: blue;
     align-items: center;
     padding: 1%;
+    margin-top: 0%;
+    padding-top: 0%;
+    border-top: solid;
 }
 
 footer img{
     color: black;
     margin: auto 50px;
+    margin-top: 10px;
 }
 
 /*Texto de presentacion - de About-Sobre mi y donación*/
