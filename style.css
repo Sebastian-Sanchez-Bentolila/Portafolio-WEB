@@ -215,13 +215,31 @@ h3{
     margin: 40px; 
 }
 
-.about a{
-    font-size: 1.5rem;
+.about{
+    text-align: center; /* Alineación del texto al centro */
+}
+
+.cartel-donacion a, .cartel-cursos a{
+    font-size: 24px;
     margin: 40px; 
+    font-weight: bold;
+    color: black;
 }
 
 .donacion img{
     margin: 40px;
+}
+
+/* Estilo para el contenedor del cartel - Donación y cursos*/
+.cartel-donacion, .cartel-cursos{
+    background-color: greenyellow; 
+    padding: 20px; 
+    text-align: center; 
+    border-radius: 10px; 
+    width: 300px; 
+    margin: 40px; 
+    border-radius: 25px;
+    display: inline-block; 
 }
 
 /* Estilos para la página de contacto */
