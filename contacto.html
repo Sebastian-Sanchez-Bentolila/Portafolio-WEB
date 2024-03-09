@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto - Sebastian Sanchez Bentolila</title>
+    <link rel="stylesheet" href="style.css">
+    <form action="contact-form.php" method="post"></form>
+    <script>
+        function enviarFormulario() {
+            document.getElementById("enviadoMensaje").style.display = "block";
+        }
+    </script>    
+</head>
+
+<body>
+
+    <header>
+        <h1>Sebastian Sanchez Bentolila</h1>
+        <p>Estudiante de Ciencia de Datos en la Universidad Nacional de Guillermo Brown (UNAB)</p>
+        <p>Desarrollador Junior de software de escritorio</p>
+    </header>
+
+    <nav>
+        <a href="index.html">Portafolio</a>
+        <a href="cursos.html">Capacitación</a>
+        <a href="blogs.html">Blogs</a>
+        <a href="contacto.html" class="active">Contacto</a> <!-- Destacar la página actual -->
+    </nav>
+
+    <section class="contact-info">
+        <h2>Información de Contacto</h2>
+        <div class="contact-icons">
+            <a href="mailto:sebastiansb3004@gmail.com" target="_blank">
+                <img src="src/img/contacto/gmail.png" alt="Icono de Gmail">
+                <p>sebastiansb3004@gmail.com</p>
+            </a>
+            <a href="https://github.com/Sebastian-Sanchez-Bentolila" target="_blank">
+                <img src="src/img/contacto/github.png" alt="Icono de GitHub">
+                <p>Sebastian Sanchez Bentolila</p>
+            </a>
+            <a href="https://www.instagram.com/sebas_sanchez_bentolila" target="_blank">
+                <img src="src/img/contacto/instagram.png" alt="Icono de Instagram">
+                <p>@sebas_sanchez_bentolila</p>
+            </a>
+            <a href="https://www.linkedin.com/in/sebastian-ezequiel-sanchez-bentolila-478a83229/" target="_blank">
+                <img src="src/img/contacto/linkedin.png" alt="Icono de LinkedIn">
+                <p>Sebastian Ezequiel Sanchez Bentolila</p> 
+            </a>
+        </div>
+    </section>
+
+    <section class="contact-form">
+        <h2>Envíame un Correo Electrónico</h2>
+        <form action="#" method="post">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+            <button type="submit" onclick="enviarFormulario()">Enviar Mensaje</button>
+
+            <!-- Mensaje de enviado satisfactoriamente -->
+            <p id="enviadoMensaje" style="display: none; color: #4CAF50;">¡Mensaje enviado satisfactoriamente!</p>
+        </form>
+    </section>
+
+    <footer>
+        <p>Todos los derechos reservados &copy; 2024 - Sebastian Sanchez Bentolila</p>
+    </footer>
+
+</body>
+
+</html>

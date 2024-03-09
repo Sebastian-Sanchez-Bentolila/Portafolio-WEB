@@ -1,0 +1,371 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+header h1 {
+    color: #fff;
+}
+
+nav {
+    background-color: #444;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 1rem;
+}
+
+nav a.active {
+    font-weight: bold;
+}
+
+section {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Estilos específicos para la sección Acerca de Mí */
+
+#acerca img {
+    display: block;
+    margin: 0 auto;
+    border-radius: 50%;
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilos específicos para la sección de proyectos */
+
+.projects-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-item {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+}
+
+.project-item img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para la sección de cursos */
+
+#cursos {
+    padding: 2rem;
+    background-color: #fff;
+    margin: 1rem 0;
+}
+
+#cursos a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+#cursos a:hover {
+    text-decoration: underline;
+}
+
+/* Otros estilos */
+
+h1, h2, h3 {
+    color: #333;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Estilos específicos para la sección de información de contacto */
+
+.contact-info {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-info h2 {
+    color: #333;
+}
+
+.contact-icons {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+}
+
+.contact-icons a {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-decoration: none;
+    color: #333;
+}
+
+.contact-icons a img {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+
+/* Estilos específicos para la sección de formulario de contacto */
+
+.contact-form {
+    background-color: #f9f9f9;
+    padding: 2rem;
+    margin: 1rem 0;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 8px 16px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Estilos para la sección de blogs */
+#blogs {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.blog-item {
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.blog-content {
+    padding: 20px;
+}
+
+.blog-content h3 {
+    margin-top: 0;
+}
+
+.blog-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.blog-content p {
+    margin-bottom: 10px;
+}
+
+.blog-content a {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.blog-content a:hover {
+    background-color: #0056b3;
+}
+
+/* Media query para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    /* Estilos generales para dispositivos móviles */
+    body {
+        font-size: 14px;
+    }
+
+    header {
+        padding: 0.5rem;
+    }
+
+    nav {
+        padding: 0.5rem;
+    }
+
+    nav a {
+        margin: 0 0.5rem;
+    }
+
+    section {
+        padding: 1rem;
+    }
+
+    footer {
+        padding: 0.5rem;
+    }
+
+    /* Estilos específicos para la sección Acerca de Mí */
+    #acerca img {
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+
+    /* Estilos específicos para la sección de proyectos */
+    .projects-list {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 10px;
+    }
+
+    .project-item {
+        padding: 0.5rem;
+    }
+
+    .project-item img {
+        margin-bottom: 5px;
+    }
+
+    /* Estilos específicos para la sección de cursos */
+    #cursos {
+        padding: 1rem;
+    }
+
+    /* Estilos específicos para la sección de información de contacto */
+    .contact-info, .contact-form {
+        padding: 1rem;
+        margin: 0.5rem 0;
+    }
+
+    .contact-icons a img {
+        width: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+    }
+
+    /* Estilos específicos para la sección de formulario de contacto */
+    .contact-form input,
+    .contact-form textarea {
+        padding: 6px;
+        margin-bottom: 8px;
+    }
+
+    .contact-form button {
+        padding: 6px 12px;
+        font-size: 0.8rem;
+    }
+
+    /* Estilos específicos para la sección de blogs */
+    #blogs {
+        padding: 10px;
+    }
+
+    .blog-item {
+        margin-bottom: 10px;
+    }
+
+    .blog-content {
+        padding: 10px;
+    }
+
+    .blog-content a {
+        padding: 5px 8px;
+        font-size: 0.8rem;
+    }
+}
+
+/* Estilos de la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: normal;
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tr:hover {
+    background-color: #ddd;
+}
+
+td:first-child {
+    font-weight: bold;
+}
+
+td:last-child {
+    font-style: italic;
+}
