@@ -8,7 +8,7 @@ body {
 }
 
 header {
-    background-color: #333;
+    background-color: #1B58F2;
     color: #fff;
     text-align: center;
     padding: 1rem;
@@ -19,7 +19,7 @@ header h1 {
 }
 
 nav {
-    background-color: #444;
+    background-color: #1B9CF2;
     text-align: center;
     padding: 0.5rem;
 }
@@ -41,23 +41,36 @@ section {
 }
 
 footer {
-    background-color: #333;
+    background-color: #1B58F2;
     color: #fff;
     text-align: center;
     padding: 1rem;
 }
 
+p, li {
+    font-size:larger;
+} 
+
 /* Estilos específicos para la sección Acerca de Mí */
+
+#acerca::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 #acerca img {
     display: block;
-    margin: 0 auto;
-    border-radius: 50%;
+    float: left;
+    margin: 20px;
+    border-radius: 10%;
     max-width: 100%;
     height: auto;
     margin-top: 20px;
     margin-bottom: 20px;
-}
+    border: solid;
+    border-color: #1B9CF2;
+}   
 
 /* Estilos específicos para la sección de proyectos */
 
@@ -367,5 +380,5 @@ td:first-child {
 }
 
 td:last-child {
-    font-style: italic;
+    font-style: normal;
 }
